@@ -1,18 +1,14 @@
-import WordForm from "./WordForm";
-
-export default function Words({ words, setWords }) {
-  const addWord = (word) => {
-    if (!word.text || /^\s*$/.test(word.text)) {
-      return;
-    }
-    const newWord = [word, ...words];
-    setWords(newWord);
-  };
-
+export default function Words({ words }) {
+  const wordsToScramble = words.map((word, index) => {
+    return (
+      <div key={index}>
+        <span>{word}</span>
+      </div>
+    );
+  });
   return (
-    <div className="word-list">
-      <WordForm onSubmit={addWord} />
-      <div>{words}</div>
+    <div className="words">
+      <div>{wordsToScramble}</div>
     </div>
   );
 }

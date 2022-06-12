@@ -7,3 +7,8 @@
   flex-direction: column;
 }
 
+.scramble {
+  display: flex;
+  flex-direction: column;
+}
+
