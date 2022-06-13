@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-  background-color: black;
+  background-color: rgb(20, 20, 20);
   color: rgb(255, 255, 255);
 }
 
@@ -9,10 +9,11 @@
 .App {
   text-align: center;
   font-family: 'Bebas Neue';
+  color: rgb(225, 225, 225);
 }
 
 .word-scrambler {
-  color: orange;
+  color: rgb(225, 225, 225);;
 }
   
 .word-scramble-container {
@@ -26,11 +27,13 @@
 
 input {
   font-family: 'Bebas Neue';
-  background-color: rgb(125, 0, 0);
-  color: yellow;
+  background-color: rgb(225, 225, 225);
+  color: rgb(20, 20, 20);
   border: none;
-  border-radius: .25em;
-  margin: .25em;
+  border-radius: .5em;
+  margin: .5em;
+  height: 1.5em;
+  width: 10em;
 }
 
 input:focus {
@@ -44,11 +47,17 @@ input::placeholder {
 
 .btn {
   font-family: 'Bebas Neue';
-  background-color: rgb(125, 0, 0);
+  background-color: rgb(225, 225, 225);
   border: none;
-  border-radius: .25em;
-  color: yellow;
+  border-radius: .75em;
+  color: rgb(20, 20, 20);
   margin: .25em;
+  height: 1.5em;
+}
+
+.btn:hover {
+  background-color: rgb(112, 0, 0);
+  color: rgb(225, 225, 225);
 }
 
 .words {
