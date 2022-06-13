@@ -1,14 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+
 .App {
   text-align: center;
+  font-family: 'Bebas Neue';
 }
 
-.input-form {
-  display: flex;
-  flex-direction: column;
+.word-scrambler {
+  color: orange;
+}
+  
+.word-scramble-container {
+  height: 20rem;
 }
 
-.scramble {
-  display: flex;
-  flex-direction: column;
+.word-div {
+  height: 20rem;
+  width: 20rem;
 }
+
+input {
+  font-family: 'Bebas Neue';
+  background-color: rgb(125, 0, 0);
+  color: yellow;
+  border: none;
+  border-radius: .25em;
+  margin: .25em;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+  text-align: center;
+    color: black;
+}
+
+.btn {
+  font-family: 'Bebas Neue';
+  background-color: rgb(125, 0, 0);
+  border: none;
+  border-radius: .25em;
+  color: yellow;
+  margin: .25em;
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
 
